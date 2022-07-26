@@ -14621,14 +14621,15 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <div class="alert alert-block alert-info"> 
- <p>In this blog post we will introduce some key ideas for compiling quantum circuits. We will also demonstrate some key features of TKET through its python interface.</p>
+ <p>In this blog post we will discuss some key ideas for compiling quantum circuits. We will also introduce TKET and demonstrate some of its key features though its python interface.</p>
   <ol>
     <li>Constructing circuits </li>
     <li>Converting between different circuit formats</li> 
     <li>Compiling circuits for different quantum devices and classical simulators</li> 
-    <li>Optimising quantum circuits to improve their perfromance </li>
+    <li>Optimising quantum circuits to improve their performance </li>
   </ol>
-    We will assume some familiarity with quantum circuits as well as some basic knowledge of python programming and linear algebra. This notebook can be viewed on <nav><a href=”/css/”>Github</a> </nav></div>
+    We will assume some familiarity with quantum circuits as well as some basic knowledge of python programming and linear algebra.
+</div>
 </div>
 </div>
 </div>
@@ -14639,7 +14640,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Present day quantum computers suffer from prohibitive noise and have complex constraints on the kinds of programs they can run. In general a non-trival compilation step is required to translate a program to a form that can be executed on a real quantum device.</p>
+<p>Present day quantum computers suffer from prohibitive noise and have complex constraints on the kinds of programs they can run. In general a non-trivial compilation step is required to translate a program to a form that can be executed on a real quantum device.</p>
 
 </div>
 </div>
@@ -14663,7 +14664,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Importantly TKET has numerous optimisation tools to reduce the resources needed for near term quantum experiments. Such circuit optimisations can significantly improve the performance of algorithms by effectively mitigating against noise. In addition TKET has extension modules which enable the user to access hardware and simulators from different providers. These extensions also enable functionality with other popular quantum software packages including qiskit, cirq and more.</p>
+<p>Importantly TKET has numerous optimisation tools to reduce the resources needed for near term quantum experiments. Such circuit optimisations can significantly improve the performance of algorithms by effectively mitigating against noise. In addition TKET has extension modules which enable the user to access hardware and simulators from different providers. These extensions also enable interaction with other popular quantum software packages including qiskit, cirq and more.</p>
 
 </div>
 </div>
@@ -14707,7 +14708,7 @@ $$ \left| \psi \right\rangle = \frac{1}{\sqrt{2}} \big( \left| 00 \right\rangle 
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[18]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">pytket</span> <span class="kn">import</span> <span class="n">Circuit</span> <span class="c1"># import Circuit class</span>
@@ -14758,7 +14759,7 @@ $$ \left| \psi \right\rangle = \frac{1}{\sqrt{2}} \big( \left| 00 \right\rangle 
     &lt;link rel=&#34;stylesheet&#34; href=&#34;https://unpkg.com/pytket-circuit-renderer@0.1/dist/pytket-circuit-renderer.css&#34;&gt;
 &lt;/head&gt;
 &lt;body&gt;
-    &lt;div id=&#34;circuit-display-vue-container-d613d063-d811-4646-9cb9-51d7a5af5bb8&#34; class=&#34;pytket-circuit-display-container&#34;&gt;
+    &lt;div id=&#34;circuit-display-vue-container-a05da63f-1bd4-4ddf-b3f1-e1ed83bbabd3&#34; class=&#34;pytket-circuit-display-container&#34;&gt;
         &lt;div style=&#34;display: none&#34;&gt;
             &lt;div id=&#34;circuit-json-to-display&#34;&gt;{&#34;bits&#34;: [[&#34;c&#34;, [0]], [&#34;c&#34;, [1]]], &#34;commands&#34;: [{&#34;args&#34;: [[&#34;q&#34;, [0]]], &#34;op&#34;: {&#34;type&#34;: &#34;H&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [0]], [&#34;q&#34;, [1]]], &#34;op&#34;: {&#34;type&#34;: &#34;CX&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [0]], [&#34;c&#34;, [0]]], &#34;op&#34;: {&#34;type&#34;: &#34;Measure&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [1]], [&#34;c&#34;, [1]]], &#34;op&#34;: {&#34;type&#34;: &#34;Measure&#34;}}], &#34;implicit_permutation&#34;: [[[&#34;q&#34;, [0]], [&#34;q&#34;, [0]]], [[&#34;q&#34;, [1]], [&#34;q&#34;, [1]]]], &#34;phase&#34;: &#34;0.0&#34;, &#34;qubits&#34;: [[&#34;q&#34;, [0]], [&#34;q&#34;, [1]]]}&lt;/div&gt;
         &lt;/div&gt;
@@ -14774,7 +14775,7 @@ $$ \left| \psi \right\rangle = \frac{1}{\sqrt{2}} \big( \left| 00 \right\rangle 
             window.pytketCircuitDisplays = {};
         }
 
-        const uid = &#34;d613d063-d811-4646-9cb9-51d7a5af5bb8&#34;;
+        const uid = &#34;a05da63f-1bd4-4ddf-b3f1-e1ed83bbabd3&#34;;
 
         // Create the root Vue component
         window.pytketCircuitDisplays[uid] = createApp({
@@ -14804,7 +14805,7 @@ $$ \left| \psi \right\rangle = \frac{1}{\sqrt{2}} \big( \left| 00 \right\rangle 
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>The rendered circuit diagram has user interface icons to the left of the display. These icons cane be used to toggle between different representations of the circuit. Readers familiar with the ZX calculus can view the circuit as a ZX diagram instead of a traditonal quantum circuit.</p>
+<p>The rendered circuit diagram has user interface icons to the left of the display. These icons can be used to toggle between different representations of the circuit. Readers familiar with the ZX calculus can view the circuit as a ZX diagram instead of a traditional quantum circuit.</p>
 
 </div>
 </div>
@@ -14826,7 +14827,7 @@ $$ \left| \psi \right\rangle = \frac{1}{\sqrt{2}} \big( \left| 00 \right\rangle 
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">qiskit</span> <span class="kn">import</span> <span class="n">QuantumCircuit</span>
@@ -14854,7 +14855,7 @@ $$ \left| \psi \right\rangle = \frac{1}{\sqrt{2}} \big( \left| 00 \right\rangle 
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[1]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[3]:</div>
 
 
 
@@ -14891,7 +14892,7 @@ meas: 2/══════════════╩══╩═
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[21]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">pytket.extensions.qiskit</span> <span class="kn">import</span> <span class="n">qiskit_to_tk</span>
@@ -14939,9 +14940,9 @@ meas: 2/══════════════╩══╩═
     &lt;link rel=&#34;stylesheet&#34; href=&#34;https://unpkg.com/pytket-circuit-renderer@0.1/dist/pytket-circuit-renderer.css&#34;&gt;
 &lt;/head&gt;
 &lt;body&gt;
-    &lt;div id=&#34;circuit-display-vue-container-3e85268f-42bb-42f4-a2df-5e9cbb8b805d&#34; class=&#34;pytket-circuit-display-container&#34;&gt;
+    &lt;div id=&#34;circuit-display-vue-container-f57d1d2a-47e3-48a1-a64f-1eff0ae6be4e&#34; class=&#34;pytket-circuit-display-container&#34;&gt;
         &lt;div style=&#34;display: none&#34;&gt;
-            &lt;div id=&#34;circuit-json-to-display&#34;&gt;{&#34;bits&#34;: [[&#34;meas&#34;, [0]], [&#34;meas&#34;, [1]]], &#34;commands&#34;: [{&#34;args&#34;: [[&#34;q&#34;, [0]]], &#34;op&#34;: {&#34;type&#34;: &#34;H&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [0]], [&#34;q&#34;, [1]]], &#34;op&#34;: {&#34;type&#34;: &#34;CX&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [0]], [&#34;q&#34;, [1]]], &#34;op&#34;: {&#34;signature&#34;: [&#34;Q&#34;, &#34;Q&#34;], &#34;type&#34;: &#34;Barrier&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [0]], [&#34;meas&#34;, [0]]], &#34;op&#34;: {&#34;type&#34;: &#34;Measure&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [1]], [&#34;meas&#34;, [1]]], &#34;op&#34;: {&#34;type&#34;: &#34;Measure&#34;}}], &#34;implicit_permutation&#34;: [[[&#34;q&#34;, [0]], [&#34;q&#34;, [0]]], [[&#34;q&#34;, [1]], [&#34;q&#34;, [1]]]], &#34;name&#34;: &#34;circuit-1003&#34;, &#34;phase&#34;: &#34;0.0&#34;, &#34;qubits&#34;: [[&#34;q&#34;, [0]], [&#34;q&#34;, [1]]]}&lt;/div&gt;
+            &lt;div id=&#34;circuit-json-to-display&#34;&gt;{&#34;bits&#34;: [[&#34;meas&#34;, [0]], [&#34;meas&#34;, [1]]], &#34;commands&#34;: [{&#34;args&#34;: [[&#34;q&#34;, [0]]], &#34;op&#34;: {&#34;type&#34;: &#34;H&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [0]], [&#34;q&#34;, [1]]], &#34;op&#34;: {&#34;type&#34;: &#34;CX&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [0]], [&#34;q&#34;, [1]]], &#34;op&#34;: {&#34;signature&#34;: [&#34;Q&#34;, &#34;Q&#34;], &#34;type&#34;: &#34;Barrier&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [0]], [&#34;meas&#34;, [0]]], &#34;op&#34;: {&#34;type&#34;: &#34;Measure&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [1]], [&#34;meas&#34;, [1]]], &#34;op&#34;: {&#34;type&#34;: &#34;Measure&#34;}}], &#34;implicit_permutation&#34;: [[[&#34;q&#34;, [0]], [&#34;q&#34;, [0]]], [[&#34;q&#34;, [1]], [&#34;q&#34;, [1]]]], &#34;name&#34;: &#34;circuit-0&#34;, &#34;phase&#34;: &#34;0.0&#34;, &#34;qubits&#34;: [[&#34;q&#34;, [0]], [&#34;q&#34;, [1]]]}&lt;/div&gt;
         &lt;/div&gt;
         &lt;circuit-display-container :circuit-element-str=&#34;&#39;#circuit-json-to-display&#39;&#34;&gt;&lt;/circuit-display-container&gt;
     &lt;/div&gt;
@@ -14955,7 +14956,7 @@ meas: 2/══════════════╩══╩═
             window.pytketCircuitDisplays = {};
         }
 
-        const uid = &#34;3e85268f-42bb-42f4-a2df-5e9cbb8b805d&#34;;
+        const uid = &#34;f57d1d2a-47e3-48a1-a64f-1eff0ae6be4e&#34;;
 
         // Create the root Vue component
         window.pytketCircuitDisplays[uid] = createApp({
@@ -14997,7 +14998,7 @@ meas: 2/══════════════╩══╩═
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>TKET has many extension modules for interfacing with different types of quantum hardware and classical simulators. Let's simulate our Bell circuit using the <code>AerBackend</code> Simulator from the pytket-qiskit extension. This simulator is noiseless by default.</p>
+<p>TKET has many extension modules for interfacing with different types of quantum hardware and classical simulators. Let's simulate our Bell circuit using the <code>AerBackend</code> simulator from the pytket-qiskit extension. This simulator is noiseless by default.</p>
 
 </div>
 </div>
@@ -15007,7 +15008,7 @@ meas: 2/══════════════╩══╩═
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[17]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">pytket.extensions.qiskit</span> <span class="kn">import</span> <span class="n">AerBackend</span> <span class="c1"># import AerBackend from the pytket-qiskit extension</span>
@@ -15039,7 +15040,7 @@ meas: 2/══════════════╩══╩═
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Counter({(1, 1): 503, (0, 0): 497})
+<pre>Counter({(1, 1): 506, (0, 0): 494})
 </pre>
 </div>
 </div>
@@ -15055,7 +15056,7 @@ meas: 2/══════════════╩══╩═
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>As you can see we obtain approximately equal number of counts in the (0,0) and (1,1) basis states. This is what one would expect from measuring the Bell state. Even although the simulator is noiseless we would not expect an exact 50:50 distribution as there as we are still randomly sampling. If you flip a fair coin 1000 times its unlikely to give heads and tails 500 times each!</p>
+<p>As you can see we obtain approximately equal number of counts in the (0,0) and (1,1) basis states. This is what one would expect from measuring the Bell state. Even though the simulator is noiseless we would not expect an exact 50:50 distribution as there as we are still randomly sampling. If you flip a fair coin 1000 times its unlikely to give heads and tails 500 times each!</p>
 
 </div>
 </div>
@@ -15092,6 +15093,18 @@ $$ U \left| \psi \right\rangle = e^{2 \pi i \theta} \left|\psi \right \rangle $$
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Here the state $|\psi \rangle$ is an eigenstate of $U$.</p>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>The eigenvalue can be expressed as $e^{2 \pi i \theta}$ as the eigenvalue of a unitary operator has norm 1. Quantum phase estimation allows us to estimate the phase $\theta$ which will be encoded in the measurement results.</p>
 
 </div>
@@ -15114,7 +15127,7 @@ $$ U \left| \psi \right\rangle = e^{2 \pi i \theta} \left|\psi \right \rangle $$
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">pytket.qasm</span> <span class="kn">import</span> <span class="n">circuit_from_qasm</span>
@@ -15160,7 +15173,7 @@ $$ U \left| \psi \right\rangle = e^{2 \pi i \theta} \left|\psi \right \rangle $$
     &lt;link rel=&#34;stylesheet&#34; href=&#34;https://unpkg.com/pytket-circuit-renderer@0.1/dist/pytket-circuit-renderer.css&#34;&gt;
 &lt;/head&gt;
 &lt;body&gt;
-    &lt;div id=&#34;circuit-display-vue-container-7d979958-7d89-41e2-9228-cf2783df5633&#34; class=&#34;pytket-circuit-display-container&#34;&gt;
+    &lt;div id=&#34;circuit-display-vue-container-e1d4ce1e-b643-454b-858a-1b9624ff63ab&#34; class=&#34;pytket-circuit-display-container&#34;&gt;
         &lt;div style=&#34;display: none&#34;&gt;
             &lt;div id=&#34;circuit-json-to-display&#34;&gt;{&#34;bits&#34;: [[&#34;c&#34;, [0]], [&#34;c&#34;, [1]]], &#34;commands&#34;: [{&#34;args&#34;: [[&#34;q&#34;, [0]]], &#34;op&#34;: {&#34;type&#34;: &#34;H&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [1]]], &#34;op&#34;: {&#34;type&#34;: &#34;H&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [2]]], &#34;op&#34;: {&#34;type&#34;: &#34;X&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [1]], [&#34;q&#34;, [2]]], &#34;op&#34;: {&#34;params&#34;: [&#34;0.25&#34;], &#34;type&#34;: &#34;CU1&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [0]], [&#34;q&#34;, [2]]], &#34;op&#34;: {&#34;params&#34;: [&#34;0.25&#34;], &#34;type&#34;: &#34;CU1&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [0]], [&#34;q&#34;, [2]]], &#34;op&#34;: {&#34;params&#34;: [&#34;0.25&#34;], &#34;type&#34;: &#34;CU1&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [0]], [&#34;q&#34;, [1]]], &#34;op&#34;: {&#34;type&#34;: &#34;SWAP&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [1]]], &#34;op&#34;: {&#34;type&#34;: &#34;H&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [1]], [&#34;q&#34;, [0]]], &#34;op&#34;: {&#34;params&#34;: [&#34;1.5&#34;], &#34;type&#34;: &#34;CU1&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [1]], [&#34;c&#34;, [1]]], &#34;op&#34;: {&#34;type&#34;: &#34;Measure&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [0]]], &#34;op&#34;: {&#34;type&#34;: &#34;H&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [0]], [&#34;c&#34;, [0]]], &#34;op&#34;: {&#34;type&#34;: &#34;Measure&#34;}}], &#34;implicit_permutation&#34;: [[[&#34;q&#34;, [0]], [&#34;q&#34;, [0]]], [[&#34;q&#34;, [1]], [&#34;q&#34;, [1]]], [[&#34;q&#34;, [2]], [&#34;q&#34;, [2]]]], &#34;phase&#34;: &#34;0.0&#34;, &#34;qubits&#34;: [[&#34;q&#34;, [0]], [&#34;q&#34;, [1]], [&#34;q&#34;, [2]]]}&lt;/div&gt;
         &lt;/div&gt;
@@ -15176,7 +15189,7 @@ $$ U \left| \psi \right\rangle = e^{2 \pi i \theta} \left|\psi \right \rangle $$
             window.pytketCircuitDisplays = {};
         }
 
-        const uid = &#34;7d979958-7d89-41e2-9228-cf2783df5633&#34;;
+        const uid = &#34;e1d4ce1e-b643-454b-858a-1b9624ff63ab&#34;;
 
         // Create the root Vue component
         window.pytketCircuitDisplays[uid] = createApp({
@@ -15207,7 +15220,7 @@ $$ U \left| \psi \right\rangle = e^{2 \pi i \theta} \left|\psi \right \rangle $$
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <div class="alert alert-block alert-warning">
-<b>Exercise:</b> We have defined this QPE circuit using a qasm file. Can you construct the circuit using pytket? Read more about the structure of phase estimation circuits and see if you can define a function that returns a quantum phase estimation circuit that measure the phase on a single qubit using $n$ measurement qubits.
+<b>Exercise:</b> We have defined this QPE circuit using a qasm file. Can you construct the circuit using pytket? Read more about the structure of phase estimation circuits and see if you can define a function that returns a quantum phase estimation circuit that measures the phase on a single qubit using $n$ measurement qubits.
 </div>
 </div>
 </div>
@@ -15219,7 +15232,7 @@ $$ U \left| \psi \right\rangle = e^{2 \pi i \theta} \left|\psi \right \rangle $$
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Our circuit contains single qubit gates (Hadamard and X gates) as well as multi-qubit SWAP and CU1 gates. To read more about how these gates are defined click <code>here</code>. We can also count the number of gates in our circuit as follows using the OpType enum.</p>
+<p>Our circuit contains single qubit gates (Hadamard and X gates) as well as multi-qubit SWAP and CU1 gates. To read more about how these gates are defined click <a href="https://cqcl.github.io/tket/pytket/api/optype.html">here</a>. We can also count the number of gates in our circuit as follows using the OpType enum.</p>
 
 </div>
 </div>
@@ -15229,7 +15242,7 @@ $$ U \left| \psi \right\rangle = e^{2 \pi i \theta} \left|\psi \right \rangle $$
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">pytket</span> <span class="kn">import</span> <span class="n">OpType</span>
@@ -15308,7 +15321,7 @@ Two qubit gate count =  5
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">qpe3_circ</span> <span class="o">=</span> <span class="n">circuit_from_qasm</span><span class="p">(</span><span class="s1">&#39;qpe3.qasm&#39;</span><span class="p">)</span> <span class="c1"># qpe circuit with three measurement qubits and one phase qubit.</span>
@@ -15356,7 +15369,7 @@ Two qubit gate count =  5
     &lt;link rel=&#34;stylesheet&#34; href=&#34;https://unpkg.com/pytket-circuit-renderer@0.1/dist/pytket-circuit-renderer.css&#34;&gt;
 &lt;/head&gt;
 &lt;body&gt;
-    &lt;div id=&#34;circuit-display-vue-container-6036bab7-3ff0-4c3f-8766-99261b3eb2ea&#34; class=&#34;pytket-circuit-display-container&#34;&gt;
+    &lt;div id=&#34;circuit-display-vue-container-59f69d22-7e0b-4443-9fac-05d26fc9f9c8&#34; class=&#34;pytket-circuit-display-container&#34;&gt;
         &lt;div style=&#34;display: none&#34;&gt;
             &lt;div id=&#34;circuit-json-to-display&#34;&gt;{&#34;bits&#34;: [[&#34;c&#34;, [0]], [&#34;c&#34;, [1]], [&#34;c&#34;, [2]]], &#34;commands&#34;: [{&#34;args&#34;: [[&#34;q&#34;, [0]]], &#34;op&#34;: {&#34;type&#34;: &#34;H&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [1]]], &#34;op&#34;: {&#34;type&#34;: &#34;H&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [2]]], &#34;op&#34;: {&#34;type&#34;: &#34;H&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [3]]], &#34;op&#34;: {&#34;type&#34;: &#34;X&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [2]], [&#34;q&#34;, [3]]], &#34;op&#34;: {&#34;params&#34;: [&#34;0.25&#34;], &#34;type&#34;: &#34;CU1&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [1]], [&#34;q&#34;, [3]]], &#34;op&#34;: {&#34;params&#34;: [&#34;0.25&#34;], &#34;type&#34;: &#34;CU1&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [1]], [&#34;q&#34;, [3]]], &#34;op&#34;: {&#34;params&#34;: [&#34;0.25&#34;], &#34;type&#34;: &#34;CU1&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [0]], [&#34;q&#34;, [3]]], &#34;op&#34;: {&#34;params&#34;: [&#34;0.25&#34;], &#34;type&#34;: &#34;CU1&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [0]], [&#34;q&#34;, [3]]], &#34;op&#34;: {&#34;params&#34;: [&#34;0.25&#34;], &#34;type&#34;: &#34;CU1&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [0]], [&#34;q&#34;, [3]]], &#34;op&#34;: {&#34;params&#34;: [&#34;0.25&#34;], &#34;type&#34;: &#34;CU1&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [0]], [&#34;q&#34;, [3]]], &#34;op&#34;: {&#34;params&#34;: [&#34;0.25&#34;], &#34;type&#34;: &#34;CU1&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [0]], [&#34;q&#34;, [2]]], &#34;op&#34;: {&#34;type&#34;: &#34;SWAP&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [2]]], &#34;op&#34;: {&#34;type&#34;: &#34;H&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [2]], [&#34;q&#34;, [1]]], &#34;op&#34;: {&#34;params&#34;: [&#34;1.5&#34;], &#34;type&#34;: &#34;CU1&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [2]], [&#34;q&#34;, [0]]], &#34;op&#34;: {&#34;params&#34;: [&#34;1.75&#34;], &#34;type&#34;: &#34;CU1&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [1]]], &#34;op&#34;: {&#34;type&#34;: &#34;H&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [2]], [&#34;c&#34;, [2]]], &#34;op&#34;: {&#34;type&#34;: &#34;Measure&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [1]], [&#34;q&#34;, [0]]], &#34;op&#34;: {&#34;params&#34;: [&#34;1.5&#34;], &#34;type&#34;: &#34;CU1&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [1]], [&#34;c&#34;, [1]]], &#34;op&#34;: {&#34;type&#34;: &#34;Measure&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [0]]], &#34;op&#34;: {&#34;type&#34;: &#34;H&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [0]], [&#34;c&#34;, [0]]], &#34;op&#34;: {&#34;type&#34;: &#34;Measure&#34;}}], &#34;implicit_permutation&#34;: [[[&#34;q&#34;, [0]], [&#34;q&#34;, [0]]], [[&#34;q&#34;, [1]], [&#34;q&#34;, [1]]], [[&#34;q&#34;, [2]], [&#34;q&#34;, [2]]], [[&#34;q&#34;, [3]], [&#34;q&#34;, [3]]]], &#34;phase&#34;: &#34;0.0&#34;, &#34;qubits&#34;: [[&#34;q&#34;, [0]], [&#34;q&#34;, [1]], [&#34;q&#34;, [2]], [&#34;q&#34;, [3]]]}&lt;/div&gt;
         &lt;/div&gt;
@@ -15372,7 +15385,7 @@ Two qubit gate count =  5
             window.pytketCircuitDisplays = {};
         }
 
-        const uid = &#34;6036bab7-3ff0-4c3f-8766-99261b3eb2ea&#34;;
+        const uid = &#34;59f69d22-7e0b-4443-9fac-05d26fc9f9c8&#34;;
 
         // Create the root Vue component
         window.pytketCircuitDisplays[uid] = createApp({
@@ -15415,7 +15428,7 @@ Two qubit gate count =  11
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Lets now think about how to run our phase estimation circuit on an actual quantum computer (or at the very least a more realistic simulator! ) Lets use the <code>IBMQEmulatorBackend</code> from the <code>pytket-qiskit</code> extension. This is a simulator that attempts to capture the noise of real IBM superconducting device (The IBMQ Belem device is used here). To make our experiment more realitic our circuit must satisfy all the constraints of the real device in order to run on the simulator.</p>
+<p>Lets now think about how to run our phase estimation circuit on an actual quantum computer (or at the very least a more realistic simulator! ) Lets use the <code>IBMQEmulatorBackend</code> from the <code>pytket-qiskit</code> extension. This is a simulator that attempts to capture the noise of real IBM superconducting device (The IBMQ Belem device is used here). To make our experiment more realistic our circuit must satisfy all the constraints of the real device in order to run on the simulator.</p>
 
 </div>
 </div>
@@ -15425,7 +15438,7 @@ Two qubit gate count =  11
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">pytket.extensions.qiskit</span> <span class="kn">import</span> <span class="n">IBMQEmulatorBackend</span>
@@ -15445,7 +15458,7 @@ Two qubit gate count =  11
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Quantum devices and emulators will support a small but universial set of quantum gates. Before we can run a circuit on this IBM emulator our circuit must be in the correct gateset. To see which gates are supported we can use the <code>backend_info.gate_set</code> attribute of our backend.</p>
+<p>Quantum devices and emulators will support a small but universal set of quantum gates. Before we can run a circuit on this IBM emulator our circuit must be in the correct gateset. To see which gates are supported we can use the <code>backend_info.gate_set</code> attribute of our backend.</p>
 
 </div>
 </div>
@@ -15455,7 +15468,7 @@ Two qubit gate count =  11
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">IBM_gateset</span> <span class="o">=</span> <span class="n">IBMQ_belem_backend</span><span class="o">.</span><span class="n">backend_info</span><span class="o">.</span><span class="n">gate_set</span>
@@ -15531,7 +15544,7 @@ Two qubit gate count =  11
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[15]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">pytket.utils</span> <span class="kn">import</span> <span class="n">Graph</span>
@@ -15554,7 +15567,7 @@ Two qubit gate count =  11
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[15]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[11]:</div>
 
 
 
@@ -15653,7 +15666,7 @@ the complete graph $K_4$. Lets now take a look at how our qubits are laid out on
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[16]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">networkx</span> <span class="k">as</span> <span class="nn">nx</span>
@@ -15686,7 +15699,8 @@ the complete graph $K_4$. Lets now take a look at how our qubits are laid out on
 
 
 <div class="jp-RenderedImage jp-OutputArea-output ">
-<img src="data:image/png;base64,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"
+<img src="data:image/png;base64,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
+"
 class="
 "
 >
@@ -15705,7 +15719,19 @@ class="
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Notice how the connectivity of the device is places restrictions on the gates that can be performed. We will need to add additional SWAP gates to our circuits to realise the interactions in our phase estimation circuit. The problem of satisfying circuit connectivity without adding too many extra gates is called the <strong>qubit routing problem</strong> [ref]. We will not consider routing in detail in what follows (Perhaps in a forthcoming blog post!).</p>
+<p>Notice how the connectivity of the device places restrictions on the gates that can be performed. We will need to add additional SWAP gates to our circuits to realise the interactions in our phase estimation circuit. The problem of satisfying circuit connectivity without adding too many extra gates is called the <strong>qubit routing problem</strong>. We will not consider routing in detail in what follows (Perhaps in a forthcoming blog post!).</p>
+
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>To read more about the qubit routing problem click <a href="https://arxiv.org/abs/1902.08091">here</a>.</p>
 
 </div>
 </div>
@@ -15762,7 +15788,7 @@ class="
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[14]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">pytket.extensions.quantinuum</span> <span class="kn">import</span> <span class="n">QuantinuumBackend</span> 
@@ -15791,8 +15817,8 @@ class="
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Enter your Quantinuum email:  callum.macpherson@cambridgequantum.com
-Enter your Quantinuum password:  ···············
+<pre>Enter your Quantinuum email: callum.macpherson@cambridgequantum.com
+Enter your Quantinuum password: ········
 {&lt;OpType.ZZMax: 65&gt;, &lt;OpType.Rz: 33&gt;, &lt;OpType.ZZPhase: 68&gt;, &lt;OpType.Barrier: 6&gt;, &lt;OpType.WASM: 12&gt;, &lt;OpType.SetBits: 13&gt;, &lt;OpType.CopyBits: 14&gt;, &lt;OpType.RangePredicate: 15&gt;, &lt;OpType.ExplicitPredicate: 16&gt;, &lt;OpType.ExplicitModifier: 17&gt;, &lt;OpType.MultiBit: 18&gt;, &lt;OpType.ClassicalExpBox: 87&gt;, &lt;OpType.Measure: 58&gt;, &lt;OpType.Reset: 60&gt;, &lt;OpType.PhasedX: 63&gt;}
 </pre>
 </div>
@@ -15814,12 +15840,12 @@ Enter your Quantinuum password:  ···············
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[14]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">compiled_circuit</span> <span class="o">=</span> <span class="n">H1E_backend</span><span class="o">.</span><span class="n">get_compiled_circuit</span><span class="p">(</span><span class="n">qpe3_circ</span><span class="p">)</span>
@@ -15832,6 +15858,90 @@ Enter your Quantinuum password:  ···············
      </div>
 </div>
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output " data-mime-type="text/html">
+
+
+
+
+
+
+<iframe srcdoc="
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&#34;en&#34;&gt;
+&lt;head&gt;
+    &lt;meta charset=&#34;UTF-8&#34;&gt;
+
+    &lt;script type=&#34;application/javascript&#34; src=&#34;https://cdn.jsdelivr.net/npm/vue@3&#34;&gt;&lt;/script&gt;
+    &lt;script type=&#34;application/javascript&#34; src=&#34;https://unpkg.com/pytket-circuit-renderer@0.1/dist/pytket-circuit-renderer.umd.js&#34;&gt;&lt;/script&gt;
+    &lt;link rel=&#34;stylesheet&#34; href=&#34;https://unpkg.com/pytket-circuit-renderer@0.1/dist/pytket-circuit-renderer.css&#34;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div id=&#34;circuit-display-vue-container-5aee8c55-7bed-4b84-8edc-ab26f3bd5cf4&#34; class=&#34;pytket-circuit-display-container&#34;&gt;
+        &lt;div style=&#34;display: none&#34;&gt;
+            &lt;div id=&#34;circuit-json-to-display&#34;&gt;{&#34;bits&#34;: [[&#34;c&#34;, [0]], [&#34;c&#34;, [1]], [&#34;c&#34;, [2]]], &#34;commands&#34;: [{&#34;args&#34;: [[&#34;q&#34;, [0]]], &#34;op&#34;: {&#34;params&#34;: [&#34;-1.5&#34;, &#34;0.5&#34;], &#34;type&#34;: &#34;PhasedX&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [1]]], &#34;op&#34;: {&#34;params&#34;: [&#34;0.5&#34;, &#34;0.25&#34;], &#34;type&#34;: &#34;PhasedX&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [2]]], &#34;op&#34;: {&#34;params&#34;: [&#34;0.5&#34;, &#34;0.125&#34;], &#34;type&#34;: &#34;PhasedX&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [3]]], &#34;op&#34;: {&#34;params&#34;: [&#34;0.5&#34;, &#34;0.5&#34;], &#34;type&#34;: &#34;PhasedX&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [2]], [&#34;q&#34;, [3]]], &#34;op&#34;: {&#34;type&#34;: &#34;ZZMax&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [2]]], &#34;op&#34;: {&#34;params&#34;: [&#34;1.5&#34;], &#34;type&#34;: &#34;Rz&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [3]]], &#34;op&#34;: {&#34;params&#34;: [&#34;-1/2&#34;], &#34;type&#34;: &#34;Rz&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [3]]], &#34;op&#34;: {&#34;params&#34;: [&#34;0.125&#34;, &#34;0&#34;], &#34;type&#34;: &#34;PhasedX&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [2]], [&#34;q&#34;, [3]]], &#34;op&#34;: {&#34;type&#34;: &#34;ZZMax&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [2]]], &#34;op&#34;: {&#34;params&#34;: [&#34;-0.5&#34;, &#34;0.5&#34;], &#34;type&#34;: &#34;PhasedX&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [3]]], &#34;op&#34;: {&#34;params&#34;: [&#34;-1/2&#34;], &#34;type&#34;: &#34;Rz&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [3]]], &#34;op&#34;: {&#34;params&#34;: [&#34;-0.125&#34;, &#34;0&#34;], &#34;type&#34;: &#34;PhasedX&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [1]], [&#34;q&#34;, [3]]], &#34;op&#34;: {&#34;type&#34;: &#34;ZZMax&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [1]]], &#34;op&#34;: {&#34;params&#34;: [&#34;1.5&#34;], &#34;type&#34;: &#34;Rz&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [3]]], &#34;op&#34;: {&#34;params&#34;: [&#34;-1/2&#34;], &#34;type&#34;: &#34;Rz&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [3]]], &#34;op&#34;: {&#34;params&#34;: [&#34;0.125&#34;, &#34;0&#34;], &#34;type&#34;: &#34;PhasedX&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [1]], [&#34;q&#34;, [3]]], &#34;op&#34;: {&#34;type&#34;: &#34;ZZMax&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [1]]], &#34;op&#34;: {&#34;params&#34;: [&#34;1.5&#34;], &#34;type&#34;: &#34;Rz&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [3]]], &#34;op&#34;: {&#34;params&#34;: [&#34;-1/2&#34;], &#34;type&#34;: &#34;Rz&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [3]]], &#34;op&#34;: {&#34;params&#34;: [&#34;-0.125&#34;, &#34;0&#34;], &#34;type&#34;: &#34;PhasedX&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [1]], [&#34;q&#34;, [3]]], &#34;op&#34;: {&#34;type&#34;: &#34;ZZMax&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [1]]], &#34;op&#34;: {&#34;params&#34;: [&#34;1.5&#34;], &#34;type&#34;: &#34;Rz&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [3]]], &#34;op&#34;: {&#34;params&#34;: [&#34;-1/2&#34;], &#34;type&#34;: &#34;Rz&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [3]]], &#34;op&#34;: {&#34;params&#34;: [&#34;0.125&#34;, &#34;0&#34;], &#34;type&#34;: &#34;PhasedX&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [1]], [&#34;q&#34;, [3]]], &#34;op&#34;: {&#34;type&#34;: &#34;ZZMax&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [1]]], &#34;op&#34;: {&#34;params&#34;: [&#34;-0.5&#34;, &#34;0.5&#34;], &#34;type&#34;: &#34;PhasedX&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [3]]], &#34;op&#34;: {&#34;params&#34;: [&#34;-1/2&#34;], &#34;type&#34;: &#34;Rz&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [3]]], &#34;op&#34;: {&#34;params&#34;: [&#34;-0.125&#34;, &#34;0&#34;], &#34;type&#34;: &#34;PhasedX&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [0]], [&#34;q&#34;, [3]]], &#34;op&#34;: {&#34;type&#34;: &#34;ZZMax&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [0]]], &#34;op&#34;: {&#34;params&#34;: [&#34;1.5&#34;], &#34;type&#34;: &#34;Rz&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [3]]], &#34;op&#34;: {&#34;params&#34;: [&#34;-1/2&#34;], &#34;type&#34;: &#34;Rz&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [3]]], &#34;op&#34;: {&#34;params&#34;: [&#34;0.125&#34;, &#34;0&#34;], &#34;type&#34;: &#34;PhasedX&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [0]], [&#34;q&#34;, [3]]], &#34;op&#34;: {&#34;type&#34;: &#34;ZZMax&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [0]]], &#34;op&#34;: {&#34;params&#34;: [&#34;1.5&#34;], &#34;type&#34;: &#34;Rz&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [3]]], &#34;op&#34;: {&#34;params&#34;: [&#34;-1/2&#34;], &#34;type&#34;: &#34;Rz&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [3]]], &#34;op&#34;: {&#34;params&#34;: [&#34;-0.125&#34;, &#34;0&#34;], &#34;type&#34;: &#34;PhasedX&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [0]], [&#34;q&#34;, [3]]], &#34;op&#34;: {&#34;type&#34;: &#34;ZZMax&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [0]]], &#34;op&#34;: {&#34;params&#34;: [&#34;1.5&#34;], &#34;type&#34;: &#34;Rz&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [3]]], &#34;op&#34;: {&#34;params&#34;: [&#34;-1/2&#34;], &#34;type&#34;: &#34;Rz&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [3]]], &#34;op&#34;: {&#34;params&#34;: [&#34;0.125&#34;, &#34;0&#34;], &#34;type&#34;: &#34;PhasedX&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [0]], [&#34;q&#34;, [3]]], &#34;op&#34;: {&#34;type&#34;: &#34;ZZMax&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [0]]], &#34;op&#34;: {&#34;params&#34;: [&#34;1.5&#34;], &#34;type&#34;: &#34;Rz&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [3]]], &#34;op&#34;: {&#34;params&#34;: [&#34;-1/2&#34;], &#34;type&#34;: &#34;Rz&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [3]]], &#34;op&#34;: {&#34;params&#34;: [&#34;-0.125&#34;, &#34;0&#34;], &#34;type&#34;: &#34;PhasedX&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [0]], [&#34;q&#34;, [3]]], &#34;op&#34;: {&#34;type&#34;: &#34;ZZMax&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [0]]], &#34;op&#34;: {&#34;params&#34;: [&#34;1.5&#34;], &#34;type&#34;: &#34;Rz&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [3]]], &#34;op&#34;: {&#34;params&#34;: [&#34;-1/2&#34;], &#34;type&#34;: &#34;Rz&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [3]]], &#34;op&#34;: {&#34;params&#34;: [&#34;0.125&#34;, &#34;0&#34;], &#34;type&#34;: &#34;PhasedX&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [0]], [&#34;q&#34;, [3]]], &#34;op&#34;: {&#34;type&#34;: &#34;ZZMax&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [0]]], &#34;op&#34;: {&#34;params&#34;: [&#34;1.5&#34;], &#34;type&#34;: &#34;Rz&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [3]]], &#34;op&#34;: {&#34;params&#34;: [&#34;-1/2&#34;], &#34;type&#34;: &#34;Rz&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [3]]], &#34;op&#34;: {&#34;params&#34;: [&#34;-0.125&#34;, &#34;0&#34;], &#34;type&#34;: &#34;PhasedX&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [0]], [&#34;q&#34;, [3]]], &#34;op&#34;: {&#34;type&#34;: &#34;ZZMax&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [0]]], &#34;op&#34;: {&#34;params&#34;: [&#34;1.5&#34;], &#34;type&#34;: &#34;Rz&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [3]]], &#34;op&#34;: {&#34;params&#34;: [&#34;-1/2&#34;], &#34;type&#34;: &#34;Rz&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [3]]], &#34;op&#34;: {&#34;params&#34;: [&#34;0.125&#34;, &#34;0&#34;], &#34;type&#34;: &#34;PhasedX&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [0]], [&#34;q&#34;, [3]]], &#34;op&#34;: {&#34;type&#34;: &#34;ZZMax&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [0]]], &#34;op&#34;: {&#34;params&#34;: [&#34;1.5&#34;], &#34;type&#34;: &#34;Rz&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [3]]], &#34;op&#34;: {&#34;params&#34;: [&#34;-1.17809724509617/pi&#34;], &#34;type&#34;: &#34;Rz&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [0]], [&#34;q&#34;, [2]]], &#34;op&#34;: {&#34;type&#34;: &#34;ZZMax&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [3]]], &#34;op&#34;: {&#34;params&#34;: [&#34;-0.5&#34;, &#34;-1.17809724509617/pi&#34;], &#34;type&#34;: &#34;PhasedX&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [0]]], &#34;op&#34;: {&#34;params&#34;: [&#34;-0.5&#34;, &#34;0.5&#34;], &#34;type&#34;: &#34;PhasedX&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [2]]], &#34;op&#34;: {&#34;params&#34;: [&#34;1&#34;], &#34;type&#34;: &#34;Rz&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [2]]], &#34;op&#34;: {&#34;params&#34;: [&#34;-0.5&#34;, &#34;1&#34;], &#34;type&#34;: &#34;PhasedX&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [2]], [&#34;q&#34;, [0]]], &#34;op&#34;: {&#34;type&#34;: &#34;ZZMax&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [0]]], &#34;op&#34;: {&#34;params&#34;: [&#34;1&#34;], &#34;type&#34;: &#34;Rz&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [2]]], &#34;op&#34;: {&#34;params&#34;: [&#34;-0.5&#34;, &#34;0.5&#34;], &#34;type&#34;: &#34;PhasedX&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [0]]], &#34;op&#34;: {&#34;params&#34;: [&#34;-0.5&#34;, &#34;1&#34;], &#34;type&#34;: &#34;PhasedX&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [0]], [&#34;q&#34;, [2]]], &#34;op&#34;: {&#34;type&#34;: &#34;ZZMax&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [0]]], &#34;op&#34;: {&#34;params&#34;: [&#34;-0.5&#34;, &#34;0.5&#34;], &#34;type&#34;: &#34;PhasedX&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [2]]], &#34;op&#34;: {&#34;params&#34;: [&#34;3.625&#34;], &#34;type&#34;: &#34;Rz&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [2]], [&#34;q&#34;, [1]]], &#34;op&#34;: {&#34;type&#34;: &#34;ZZMax&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [1]]], &#34;op&#34;: {&#34;params&#34;: [&#34;-1/2&#34;], &#34;type&#34;: &#34;Rz&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [2]]], &#34;op&#34;: {&#34;params&#34;: [&#34;1.5&#34;], &#34;type&#34;: &#34;Rz&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [1]]], &#34;op&#34;: {&#34;params&#34;: [&#34;0.75&#34;, &#34;0&#34;], &#34;type&#34;: &#34;PhasedX&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [2]], [&#34;q&#34;, [1]]], &#34;op&#34;: {&#34;type&#34;: &#34;ZZMax&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [1]]], &#34;op&#34;: {&#34;params&#34;: [&#34;-1.25&#34;], &#34;type&#34;: &#34;Rz&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [2]]], &#34;op&#34;: {&#34;params&#34;: [&#34;1.5&#34;], &#34;type&#34;: &#34;Rz&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [2]], [&#34;q&#34;, [0]]], &#34;op&#34;: {&#34;type&#34;: &#34;ZZMax&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [1]]], &#34;op&#34;: {&#34;params&#34;: [&#34;0.75&#34;, &#34;0.25&#34;], &#34;type&#34;: &#34;PhasedX&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [0]]], &#34;op&#34;: {&#34;params&#34;: [&#34;-1/2&#34;], &#34;type&#34;: &#34;Rz&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [2]]], &#34;op&#34;: {&#34;params&#34;: [&#34;1.5&#34;], &#34;type&#34;: &#34;Rz&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [0]]], &#34;op&#34;: {&#34;params&#34;: [&#34;0.875&#34;, &#34;0&#34;], &#34;type&#34;: &#34;PhasedX&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [2]], [&#34;q&#34;, [0]]], &#34;op&#34;: {&#34;type&#34;: &#34;ZZMax&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [2]], [&#34;c&#34;, [2]]], &#34;op&#34;: {&#34;type&#34;: &#34;Measure&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [0]]], &#34;op&#34;: {&#34;params&#34;: [&#34;-1/2&#34;], &#34;type&#34;: &#34;Rz&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [0]]], &#34;op&#34;: {&#34;params&#34;: [&#34;-0.875&#34;, &#34;0&#34;], &#34;type&#34;: &#34;PhasedX&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [1]], [&#34;q&#34;, [0]]], &#34;op&#34;: {&#34;type&#34;: &#34;ZZMax&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [0]]], &#34;op&#34;: {&#34;params&#34;: [&#34;-1/2&#34;], &#34;type&#34;: &#34;Rz&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [1]]], &#34;op&#34;: {&#34;params&#34;: [&#34;1.5&#34;], &#34;type&#34;: &#34;Rz&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [0]]], &#34;op&#34;: {&#34;params&#34;: [&#34;0.75&#34;, &#34;0&#34;], &#34;type&#34;: &#34;PhasedX&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [1]], [&#34;q&#34;, [0]]], &#34;op&#34;: {&#34;type&#34;: &#34;ZZMax&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [1]], [&#34;c&#34;, [1]]], &#34;op&#34;: {&#34;type&#34;: &#34;Measure&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [0]]], &#34;op&#34;: {&#34;params&#34;: [&#34;1/2&#34;], &#34;type&#34;: &#34;Rz&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [0]]], &#34;op&#34;: {&#34;params&#34;: [&#34;0.75&#34;, &#34;0&#34;], &#34;type&#34;: &#34;PhasedX&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [0]], [&#34;c&#34;, [0]]], &#34;op&#34;: {&#34;type&#34;: &#34;Measure&#34;}}], &#34;implicit_permutation&#34;: [[[&#34;q&#34;, [0]], [&#34;q&#34;, [0]]], [[&#34;q&#34;, [1]], [&#34;q&#34;, [1]]], [[&#34;q&#34;, [2]], [&#34;q&#34;, [2]]], [[&#34;q&#34;, [3]], [&#34;q&#34;, [3]]]], &#34;phase&#34;: &#34;0.375&#34;, &#34;qubits&#34;: [[&#34;q&#34;, [0]], [&#34;q&#34;, [1]], [&#34;q&#34;, [2]], [&#34;q&#34;, [3]]]}&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;circuit-display-container :circuit-element-str=&#34;&#39;#circuit-json-to-display&#39;&#34;&gt;&lt;/circuit-display-container&gt;
+    &lt;/div&gt;
+
+    &lt;script type=&#34;application/javascript&#34;&gt;
+        const { createApp } = Vue;
+        const circuitDisplayContainer = window[&#34;pytket-circuit-renderer&#34;].default;
+
+        // Init variables to be shared between circuit display instances
+        if (typeof window.pytketCircuitDisplays === &#34;undefined&#34;) {
+            window.pytketCircuitDisplays = {};
+        }
+
+        const uid = &#34;5aee8c55-7bed-4b84-8edc-ab26f3bd5cf4&#34;;
+
+        // Create the root Vue component
+        window.pytketCircuitDisplays[uid] = createApp({
+            delimiters: [&#39;[[#&#39;, &#39;#]]&#39;],
+            components: { circuitDisplayContainer },
+        }).mount(&#34;#circuit-display-vue-container-&#34;+uid);
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+"
+        width="100%" height="200px"
+        style="border: none; outline: none; resize: vertical; overflow: auto"></iframe>
+
+
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Gate count =  96
+Two qubit gate count =  23
+</pre>
+</div>
+</div>
+
+</div>
+
 </div>
 
 </div>
@@ -15853,7 +15963,7 @@ Enter your Quantinuum password:  ···············
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>On noisy hardware more gates means more errors will accumulate over the course of our computation introduce additional noise in our results. This motivates the idea of circuit optimisation. The question aries - how can we compile our circuit to our target device without adding too many extra noisy gates?</p>
+<p>On noisy hardware more gates means more errors will accumulate over the course of our computation introduce additional noise in our results. This leads naturally to the idea of circuit optimisation. The question arises - how can we compile our circuit to our target device without adding too many extra noisy gates?</p>
 
 </div>
 </div>
@@ -15872,12 +15982,12 @@ Enter your Quantinuum password:  ···············
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[15]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">qpe3_circ</span> <span class="o">=</span> <span class="n">circuit_from_qasm</span><span class="p">(</span><span class="s1">&#39;qpe3.qasm&#39;</span><span class="p">)</span>
@@ -15893,6 +16003,90 @@ Enter your Quantinuum password:  ···············
      </div>
 </div>
 </div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output " data-mime-type="text/html">
+
+
+
+
+
+
+<iframe srcdoc="
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&#34;en&#34;&gt;
+&lt;head&gt;
+    &lt;meta charset=&#34;UTF-8&#34;&gt;
+
+    &lt;script type=&#34;application/javascript&#34; src=&#34;https://cdn.jsdelivr.net/npm/vue@3&#34;&gt;&lt;/script&gt;
+    &lt;script type=&#34;application/javascript&#34; src=&#34;https://unpkg.com/pytket-circuit-renderer@0.1/dist/pytket-circuit-renderer.umd.js&#34;&gt;&lt;/script&gt;
+    &lt;link rel=&#34;stylesheet&#34; href=&#34;https://unpkg.com/pytket-circuit-renderer@0.1/dist/pytket-circuit-renderer.css&#34;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div id=&#34;circuit-display-vue-container-4de7b173-853a-40cb-b3cc-0ca22ad36d5e&#34; class=&#34;pytket-circuit-display-container&#34;&gt;
+        &lt;div style=&#34;display: none&#34;&gt;
+            &lt;div id=&#34;circuit-json-to-display&#34;&gt;{&#34;bits&#34;: [[&#34;c&#34;, [0]], [&#34;c&#34;, [1]], [&#34;c&#34;, [2]]], &#34;commands&#34;: [{&#34;args&#34;: [[&#34;q&#34;, [0]]], &#34;op&#34;: {&#34;params&#34;: [&#34;-0.5&#34;, &#34;0&#34;], &#34;type&#34;: &#34;PhasedX&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [1]]], &#34;op&#34;: {&#34;params&#34;: [&#34;-0.75&#34;, &#34;1&#34;], &#34;type&#34;: &#34;PhasedX&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [2]]], &#34;op&#34;: {&#34;params&#34;: [&#34;0.5&#34;, &#34;0.125&#34;], &#34;type&#34;: &#34;PhasedX&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [3]]], &#34;op&#34;: {&#34;params&#34;: [&#34;0.5&#34;, &#34;0.5&#34;], &#34;type&#34;: &#34;PhasedX&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [2]], [&#34;q&#34;, [3]]], &#34;op&#34;: {&#34;type&#34;: &#34;ZZMax&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [2]]], &#34;op&#34;: {&#34;params&#34;: [&#34;1.5&#34;], &#34;type&#34;: &#34;Rz&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [3]]], &#34;op&#34;: {&#34;params&#34;: [&#34;-1/2&#34;], &#34;type&#34;: &#34;Rz&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [3]]], &#34;op&#34;: {&#34;params&#34;: [&#34;0.125&#34;, &#34;0&#34;], &#34;type&#34;: &#34;PhasedX&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [2]], [&#34;q&#34;, [3]]], &#34;op&#34;: {&#34;type&#34;: &#34;ZZMax&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [2]]], &#34;op&#34;: {&#34;params&#34;: [&#34;-0.5&#34;, &#34;0.5&#34;], &#34;type&#34;: &#34;PhasedX&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [3]]], &#34;op&#34;: {&#34;params&#34;: [&#34;-2.74889357189107/pi&#34;], &#34;type&#34;: &#34;Rz&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [3]]], &#34;op&#34;: {&#34;params&#34;: [&#34;-0.5&#34;, &#34;-2.74889357189107/pi&#34;], &#34;type&#34;: &#34;PhasedX&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [1]], [&#34;q&#34;, [3]]], &#34;op&#34;: {&#34;type&#34;: &#34;ZZMax&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [1]]], &#34;op&#34;: {&#34;params&#34;: [&#34;1/2&#34;], &#34;type&#34;: &#34;Rz&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [3]]], &#34;op&#34;: {&#34;params&#34;: [&#34;-0.5&#34;], &#34;type&#34;: &#34;Rz&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [1]]], &#34;op&#34;: {&#34;params&#34;: [&#34;0.75&#34;, &#34;0&#34;], &#34;type&#34;: &#34;PhasedX&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [1]], [&#34;q&#34;, [3]]], &#34;op&#34;: {&#34;type&#34;: &#34;ZZMax&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [1]]], &#34;op&#34;: {&#34;params&#34;: [&#34;0.5&#34;], &#34;type&#34;: &#34;Rz&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [3]]], &#34;op&#34;: {&#34;params&#34;: [&#34;-0.75&#34;], &#34;type&#34;: &#34;Rz&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [0]], [&#34;q&#34;, [3]]], &#34;op&#34;: {&#34;type&#34;: &#34;ZZMax&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [0]]], &#34;op&#34;: {&#34;params&#34;: [&#34;0.124999999999999&#34;], &#34;type&#34;: &#34;Rz&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [3]]], &#34;op&#34;: {&#34;params&#34;: [&#34;1/2&#34;], &#34;type&#34;: &#34;Rz&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [0]]], &#34;op&#34;: {&#34;params&#34;: [&#34;0.5&#34;, &#34;0.624999999999999&#34;], &#34;type&#34;: &#34;PhasedX&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [0]], [&#34;q&#34;, [1]]], &#34;op&#34;: {&#34;type&#34;: &#34;ZZMax&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [0]]], &#34;op&#34;: {&#34;params&#34;: [&#34;1.5&#34;], &#34;type&#34;: &#34;Rz&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [1]]], &#34;op&#34;: {&#34;params&#34;: [&#34;-1/2&#34;], &#34;type&#34;: &#34;Rz&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [1]]], &#34;op&#34;: {&#34;params&#34;: [&#34;0.75&#34;, &#34;0&#34;], &#34;type&#34;: &#34;PhasedX&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [0]], [&#34;q&#34;, [1]]], &#34;op&#34;: {&#34;type&#34;: &#34;ZZMax&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [0]]], &#34;op&#34;: {&#34;params&#34;: [&#34;1.5&#34;], &#34;type&#34;: &#34;Rz&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [1]]], &#34;op&#34;: {&#34;params&#34;: [&#34;-1.25&#34;], &#34;type&#34;: &#34;Rz&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [0]], [&#34;q&#34;, [2]]], &#34;op&#34;: {&#34;type&#34;: &#34;ZZMax&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [1]]], &#34;op&#34;: {&#34;params&#34;: [&#34;0.75&#34;, &#34;0.25&#34;], &#34;type&#34;: &#34;PhasedX&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [0]]], &#34;op&#34;: {&#34;params&#34;: [&#34;1.5&#34;], &#34;type&#34;: &#34;Rz&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [2]]], &#34;op&#34;: {&#34;params&#34;: [&#34;-1/2&#34;], &#34;type&#34;: &#34;Rz&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [2]]], &#34;op&#34;: {&#34;params&#34;: [&#34;0.875&#34;, &#34;0&#34;], &#34;type&#34;: &#34;PhasedX&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [0]], [&#34;q&#34;, [2]]], &#34;op&#34;: {&#34;type&#34;: &#34;ZZMax&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [0]], [&#34;c&#34;, [2]]], &#34;op&#34;: {&#34;type&#34;: &#34;Measure&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [2]]], &#34;op&#34;: {&#34;params&#34;: [&#34;-1/2&#34;], &#34;type&#34;: &#34;Rz&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [2]]], &#34;op&#34;: {&#34;params&#34;: [&#34;-0.875&#34;, &#34;0&#34;], &#34;type&#34;: &#34;PhasedX&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [1]], [&#34;q&#34;, [2]]], &#34;op&#34;: {&#34;type&#34;: &#34;ZZMax&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [1]]], &#34;op&#34;: {&#34;params&#34;: [&#34;1.5&#34;], &#34;type&#34;: &#34;Rz&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [2]]], &#34;op&#34;: {&#34;params&#34;: [&#34;-1/2&#34;], &#34;type&#34;: &#34;Rz&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [2]]], &#34;op&#34;: {&#34;params&#34;: [&#34;0.75&#34;, &#34;0&#34;], &#34;type&#34;: &#34;PhasedX&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [1]], [&#34;q&#34;, [2]]], &#34;op&#34;: {&#34;type&#34;: &#34;ZZMax&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [1]], [&#34;c&#34;, [1]]], &#34;op&#34;: {&#34;type&#34;: &#34;Measure&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [2]]], &#34;op&#34;: {&#34;params&#34;: [&#34;1/2&#34;], &#34;type&#34;: &#34;Rz&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [2]]], &#34;op&#34;: {&#34;params&#34;: [&#34;0.75&#34;, &#34;0&#34;], &#34;type&#34;: &#34;PhasedX&#34;}}, {&#34;args&#34;: [[&#34;q&#34;, [2]], [&#34;c&#34;, [0]]], &#34;op&#34;: {&#34;type&#34;: &#34;Measure&#34;}}], &#34;implicit_permutation&#34;: [[[&#34;q&#34;, [0]], [&#34;q&#34;, [2]]], [[&#34;q&#34;, [1]], [&#34;q&#34;, [1]]], [[&#34;q&#34;, [2]], [&#34;q&#34;, [0]]], [[&#34;q&#34;, [3]], [&#34;q&#34;, [3]]]], &#34;phase&#34;: &#34;1.125&#34;, &#34;qubits&#34;: [[&#34;q&#34;, [0]], [&#34;q&#34;, [1]], [&#34;q&#34;, [2]], [&#34;q&#34;, [3]]]}&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;circuit-display-container :circuit-element-str=&#34;&#39;#circuit-json-to-display&#39;&#34;&gt;&lt;/circuit-display-container&gt;
+    &lt;/div&gt;
+
+    &lt;script type=&#34;application/javascript&#34;&gt;
+        const { createApp } = Vue;
+        const circuitDisplayContainer = window[&#34;pytket-circuit-renderer&#34;].default;
+
+        // Init variables to be shared between circuit display instances
+        if (typeof window.pytketCircuitDisplays === &#34;undefined&#34;) {
+            window.pytketCircuitDisplays = {};
+        }
+
+        const uid = &#34;4de7b173-853a-40cb-b3cc-0ca22ad36d5e&#34;;
+
+        // Create the root Vue component
+        window.pytketCircuitDisplays[uid] = createApp({
+            delimiters: [&#39;[[#&#39;, &#39;#]]&#39;],
+            components: { circuitDisplayContainer },
+        }).mount(&#34;#circuit-display-vue-container-&#34;+uid);
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+"
+        width="100%" height="200px"
+        style="border: none; outline: none; resize: vertical; overflow: auto"></iframe>
+
+
+</div>
+
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Gate count =  48
+Two qubit gate count =  11
+</pre>
+</div>
+</div>
+
+</div>
+
 </div>
 
 </div>
@@ -16020,8 +16214,8 @@ The second circuit has approximately half the CX Depth and gate count when compa
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <ul>
-<li>pytket user manual --&gt; <a href="https://cqcl.github.io/pytket/manual/index.html">https://cqcl.github.io/pytket/manual/index.html</a></li>
-<li>pytket notebook examples --&gt; <a href="https://github.com/CQCL/pytket/tree/main/examples">https://github.com/CQCL/pytket/tree/main/examples</a></li>
+<li>pytket user manual - <a href="https://cqcl.github.io/pytket/manual/index.html">https://cqcl.github.io/pytket/manual/index.html</a></li>
+<li>pytket notebook examples - <a href="https://github.com/CQCL/pytket/tree/main/examples">https://github.com/CQCL/pytket/tree/main/examples</a></li>
 </ul>
 
 </div>
@@ -16035,13 +16229,29 @@ The second circuit has approximately half the CX Depth and gate count when compa
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <h2 id="Further-reading">Further reading<a class="anchor-link" href="#Further-reading">&#182;</a></h2><ul>
-<li>TKET white paper --&gt; <a href="https://arxiv.org/abs/2003.10611">https://arxiv.org/abs/2003.10611</a></li>
-<li>More theory background on quantum phase estimation --&gt; Nielsen &amp; Chuang Chapter 5, (p221-226)</li>
+<li>TKET white paper - <a href="https://arxiv.org/abs/2003.10611">https://arxiv.org/abs/2003.10611</a></li>
+<li>More theory background on quantum phase estimation - Nielsen &amp; Chuang Chapter 5, (p221-226)</li>
 </ul>
 
 </div>
 </div>
 </div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
 </div>
 </body>
 
